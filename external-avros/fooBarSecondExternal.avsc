@@ -1,0 +1,29 @@
+{
+  "type": "record",
+  "namespace": "ch.mobi.oss.avro.external",
+  "name": "FooBarSecondExternal",
+  "fields": [
+    {
+      "name": "number",
+      "type": "int",
+      "default": 0
+    },
+    {
+      "name": "item",
+      "type": {
+        "type": "record",
+        "name": "SharedObject",
+        "fields": [
+          {
+            "name": "number",
+            "type": "int"
+          },
+          {
+            "name": "code",
+            "type": "int"
+          }
+        ]
+      }
+    }
+  ]
+}
